@@ -1,11 +1,11 @@
-/* 容器限制页面最大宽度，居中显示（杂志风格） */
+/* 限制页面宽度并居中 */
 .container {
   max-width: 860px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
-/* 页面字体与背景颜色 */
+/* 页面整体字体与背景 */
 body {
   font-family: "Helvetica Neue", "Segoe UI", sans-serif;
   color: #3C3C3C;
@@ -23,7 +23,15 @@ body {
   margin-bottom: 30px;
 }
 
-/* iframe 图表样式 */
+/* 子标题 */
+.subtitle {
+  font-size: 18px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* 图表 iframe */
 iframe {
   max-width: 100%;
   border: none;
