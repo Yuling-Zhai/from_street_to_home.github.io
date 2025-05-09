@@ -1,7 +1,8 @@
 ---
-layout: default
 title: From Streets to Homes
 ---
+
+<link rel="stylesheet" href="assets/custom.css">
 
 <!-- 封面图 -->
 <div class="cover-section">
