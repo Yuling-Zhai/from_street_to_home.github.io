@@ -1,40 +1,14 @@
-/* ✅ 居中内容的容器，最大宽度限制 */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #3C3C3C;
+  background-color: #fffaf2;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 16px;
-}
-
-/* ✅ 所有图片和 iframe 不再撑满页面 */
-img, iframe {
-  max-width: 100%;
-  width: 100%;
-  display: block;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.05);
-  border: none;
-}
-
-/* ✅ 字体优化 */
-body {
-  font-family: "Helvetica Neue", "Segoe UI", sans-serif;
-  background-color: #fffaf2;
-  color: #3C3C3C;
-  line-height: 1.6;
-}
-
-/* ✅ 标题样式 */
-h1 {
-  font-size: 36px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 24px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-weight: bold;
+  padding: 20px;
 }
