@@ -1,11 +1,12 @@
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Baloo 2', cursive, sans-serif;
   color: #3C3C3C;
   background-color: #fffaf2;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
+
 
 .container {
   max-width: 860px;
