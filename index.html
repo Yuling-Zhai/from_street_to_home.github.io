@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>From Streets to Homes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/custom.css" />
+</head>
+<body>
+  <div class="container">
+
+    <img src="assets/cover.png" alt="Cover Image"
+         style="width: 100%; max-height: 360px; object-fit: cover; border-radius: 12px; margin-bottom: 24px;" />
+
+    <h1>From Streets to Homes</h1>
+    <p>A visual journey through Austin’s shelter animal system.</p>
+
+    <hr />
+
+    <h2>🔥 Where Strays Are Found</h2>
+    <p>This interactive heatmap shows where stray animals were found across Austin, updated monthly.
+       Brighter areas indicate higher density of reports.</p>
+    <iframe src="assets/heatmap_final.html" width="100%" height="520" frameborder="0"
+            style="border: none; border-radius: 12px;"></iframe>
+
+    <hr />
+
+    <h2>🗺️ Regional Distribution</h2>
+    <p>Which neighborhoods had the highest number of stray intakes.</p>
+    <iframe src="assets/choropleth_yellow_to_blue.html" width="100%" height="520" frameborder="0"
+            style="border: none; border-radius: 12px;"></iframe>
+
+    <hr />
+
+    <h2>📈 Monthly Shelter Intake</h2>
+    <p>Time series showing how many animals entered the shelter system each month.</p>
+    <iframe src="assets/monthly_intake.html" width="100%" height="520" frameborder="0"
+            style="border: none; border-radius: 12px;"></iframe>
+
+  </div>
+</body>
+</html>
