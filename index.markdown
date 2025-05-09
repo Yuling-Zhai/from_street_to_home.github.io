@@ -3,11 +3,6 @@ layout: default
 title: From Streets to Homes
 ---
 
-<!-- Hero Section 封面 -->
-<div class="cover-section">
-  <img src="assets/cover.png" alt="Cover" class="cover-image">
-</div>
-
 <!-- Cover Section -->
 <div class="cover-section">
   <img src="assets/cover.png" alt="Cover" class="cover-image">
