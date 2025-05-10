@@ -52,10 +52,11 @@
     
     <h2>Shelter Coverage & Intakes</h2>
     <p>
-      Interactive map showing shelter locations (blue houses) and their 5 km
-      coverage circles on top of neighborhood‑level intake counts.  
-      Toggle the layers on the right side of the map to focus on a specific
-      animal type or to view the shelter coverage only.
+      This map overlays 5‑km service circles for every animal shelter (blue rings with house icons)
+      on top of neighborhood‑level intake counts (yellow → blue shading) and clustered records of 
+      animals that have already been taken in (yellow → blue = more cases). 
+      It quickly shows where intake pressure is greatest, how well shelter coverage lines up with that demand, 
+      and which fringe areas still lie outside any shelter radius.
     </p>
     <iframe
       src="assets/shelter_and_animal_intakes.html"
@@ -70,10 +71,11 @@
     
     <h2>Intake → Outcome Flow</h2>
     <p>
-      Where do animals go after they enter the system?  
-      This Sankey diagram visualizes the journey from each intake source
-      (warm tones) to final outcomes (cool tones), with band width
-      proportional to case counts (2014‑2024).
+      This Sankey uses warm tones (peach / pastel yellow) for intake sources and cool pastel blue/gray for final outcomes.
+      - “Stray” and “Owner Surrender” are the two dominant entry points.
+      - Well over half of those animals reach Adoption or Transfer, showing a strong rescue‑to‑placement pipeline.
+      - Euthanasia, No Outcome, Lost and similar results form only thin streams, reflecting Austin’s progress toward its no‑kill goal.
+      In short, wide warm streams narrow into cool outcome nodes—highlighting the main rescue‑to‑placement path and the few small branches that still need attention.
     </p>
     <iframe
       src="assets/animal_outcomes_flow_sankey.html"
