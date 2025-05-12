@@ -5,90 +5,119 @@
   <title>From Streets to Homes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/custom.css" />
-</head>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+
 <body>
   <div class="container">
 
     <img src="assets/cover.png" alt="Cover Image"
          style="width: 100%; max-height: 360px; object-fit: cover; border-radius: 12px; margin-bottom: 24px;" />
-<p style="font-size: 18px; font-weight: bold; color: #000; margin-top: -8px; margin-bottom: 16px;">
-  DTU 02806 Final Project — Written by Shiming Huang, Yuling Zhai, Yu Zhang on 2025-05-12
-</p>
 
-    
-<h1>Navigating Animal Destinies in Austin: An Analysis of Shelter Intake and Outcomes</h1>
-<p>
-  Austin Animal Center faces the challenge of handling a large number of animals each year. 
-  Over the past decade, the average total number of animals admitted per year has reached <strong>13,270</strong> (complete years only). 
-  While many of these animals successfully transition to adoptive homes or reunite with their owners, a significant number face outcomes such as transfer to rescue partners or unfortunate euthanasia. 
-  This page will analyze Austin Animal Center's internal admissions from <strong>2013–2025</strong> and reveal possible outcome patterns. 
-  Our goal is to uncover key influencing factors and identify data-driven strategies to improve lifesaving efforts for vulnerable animals in the Austin area.
-</p>
+    <p style="font-size: 18px; font-weight: bold; color: #000; margin-top: -8px; margin-bottom: 16px;">
+      DTU 02806 Final Project — Written by Shiming Huang, Yuling Zhai, Yu Zhang on 2025-05-12
+    </p>
+
+    <h1>Navigating Animal Destinies in Austin: An Analysis of Shelter Intake and Outcomes</h1>
+    <p>
+      Austin Animal Center faces the challenge of handling a large number of animals each year. 
+      Over the past decade, the average total number of animals admitted per year has reached <strong>13,270</strong> (complete years only). 
+      While many of these animals successfully transition to adoptive homes or reunite with their owners, a significant number face outcomes such as transfer to rescue partners or unfortunate euthanasia. 
+      This page will analyze Austin Animal Center's internal admissions from <strong>2013–2025</strong> and reveal possible outcome patterns. 
+      Our goal is to uncover key influencing factors and identify data-driven strategies to improve lifesaving efforts for vulnerable animals in the Austin area.
+    </p>
 
     <hr />
 
     <h2>Where Strays Are Found</h2>
-    <p>Take a look at this map, where you can see where stray animals are most often found in Austin. 
+    <p>
+      Take a look at this map, where you can see where stray animals are most often found in Austin. 
       Some areas pop up more than others, showing us where help is needed the most. 
-      As these hotspots shift, it’s clear which neighborhoods need rescue efforts the most. </p>
-    <iframe src="assets/heatmap_final.html" width="100%" height="520" frameborder="0"
-            style="border: none; border-radius: 12px;"></iframe>
+      As these hotspots shift, it’s clear which neighborhoods need rescue efforts the most.
+    </p>
+    <figure>
+      <iframe src="assets/heatmap_final.html" width="100%" height="520" frameborder="0"
+              style="border: none; border-radius: 12px;"></iframe>
+      <figcaption style="font-size:14px;color:#555;margin-top:8px;">
+        <strong>Figure 1.</strong> Heatmap of stray-animal pickup locations (2013 – 2025)
+      </figcaption>
+    </figure>
 
     <hr />
 
     <h2>Regional Distribution</h2>
-    <p>Ever wonder where stray animals are most often taken in? This map paints a clear picture—some neighborhoods, especially in East and Southeast Austin, show significantly higher intake numbers than others. 
+    <p>
+      Ever wonder where stray animals are most often taken in? This map paints a clear picture—some neighborhoods, especially in East and Southeast Austin, show significantly higher intake numbers than others. 
       These hotspots highlight where rescue efforts are most needed and where shelter access might be falling short. 
-      It also raises a bigger question we’ll explore further: does where an animal is found influence what happens next?</p>
-    <iframe src="assets/choropleth_yellow_to_blue.html" width="100%" height="520" frameborder="0"
-            style="border: none; border-radius: 12px;"></iframe>
-    
+      It also raises a bigger question we’ll explore further: does where an animal is found influence what happens next?
+    </p>
+    <figure>
+      <iframe src="assets/choropleth_yellow_to_blue.html" width="100%" height="520" frameborder="0"
+              style="border: none; border-radius: 12px;"></iframe>
+      <figcaption style="font-size:14px;color:#555;margin-top:8px;">
+        <strong>Figure 2.</strong> Neighborhood-level intake counts (yellow → blue)
+      </figcaption>
+    </figure>
 
     <hr />
 
     <h2>Monthly Shelter Intake</h2>
-    <p>Here’s a glimpse into the rhythm of Austin’s shelters over the years. 
+    <p>
+      Here’s a glimpse into the rhythm of Austin’s shelters over the years. 
       From 2013 to 2025, the number of animals entering the system rose and fell with the seasons—until 2020, when the curve dropped sharply. 
       The pandemic hit, and the city’s intake numbers were never quite the same. 
       Since then, the pace has slowed, with fewer animals arriving each month. 
-      Whether this means fewer strays or fewer resources is still a question worth exploring.</p>
-    <iframe src="assets/monthly_intake.html" width="100%" height="520" frameborder="0"
-            style="border: none; border-radius: 12px;"></iframe>
+      Whether this means fewer strays or fewer resources is still a question worth exploring.
+    </p>
+    <figure>
+      <iframe src="assets/monthly_intake.html" width="100%" height="520" frameborder="0"
+              style="border: none; border-radius: 12px;"></iframe>
+      <figcaption style="font-size:14px;color:#555;margin-top:8px;">
+        <strong>Figure 3.</strong> Monthly shelter-intake trend (2013 – 2025)
+      </figcaption>
+    </figure>
 
     <hr />
     
-    <h2>Shelter Coverage & Intakes</h2>
+    <h2>Shelter Coverage &amp; Intakes</h2>
     <p>
-      This map overlays 5‑km service circles for every animal shelter (blue rings with house icons)
-      on top of neighborhood‑level intake counts (yellow → blue shading) and clustered records of 
-      animals that have already been taken in (yellow → blue = more cases). <br>
+      This map overlays 5-km service circles for every animal shelter (blue rings with house icons)
+      on top of neighborhood-level intake counts (yellow → blue shading) and clustered records of 
+      animals that have already been taken in (yellow → blue = more cases). <br>
       It quickly shows where intake pressure is greatest, how well shelter coverage lines up with that demand, 
       and which fringe areas still lie outside any shelter radius.
     </p>
-    <iframe
-      src="assets/shelter_and_animal_intakes.html"
-      width="100%"
-      height="600"
-      frameborder="0"
-      style="border: none; border-radius: 12px;"
-      loading="lazy">
-    </iframe>
+    <figure>
+      <iframe src="assets/shelter_and_animal_intakes.html" width="100%" height="600" frameborder="0"
+              style="border: none; border-radius: 12px;" loading="lazy"></iframe>
+      <figcaption style="font-size:14px;color:#555;margin-top:8px;">
+        <strong>Figure 4.</strong> Overlay of shelter service areas and intake density
+      </figcaption>
+    </figure>
 
     <hr />
 
     <h2>Key Findings from Intake Data: Animal Types and Health Conditions</h2>
     
-    <p>Our initial analysis of the intake records at the Austin Animal Center provides crucial insights into the population it serves. 
+    <p>
+      Our initial analysis of the intake records at the Austin Animal Center provides crucial insights into the population it serves. 
       The distribution of animal types (as shown in the pie chart below) clearly indicates that dogs (54.5%) and cats (39.8%) 
       are the predominant species, collectively accounting for over 94% of all intakes. Other categories such as 'Other' 
       animals (5.14%), birds (0.501%), and livestock (a very small 0.0191%) represent a much smaller fraction of the 
       shelter's incoming population, suggesting that resource allocation for housing and species-specific care should 
       primarily focus on canines and felines.
     </p>
-    <img src="assets/pie chart.png" alt="Pie chart showing distribution of animal types: Dogs 54.5%, Cats 39.8%, Other 5.14%, Bird 0.501%, Livestock 0.0191%" style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
 
-    <p style="margin-top: 30px;">Turning to the health conditions upon arrival (visualized in the bar chart below with a log scale), 
+    <figure style="text-align:center;">
+      <img src="assets/pie chart.png" alt="Pie chart showing distribution of animal types: Dogs 54.5%, Cats 39.8%, Other 5.14%, Bird 0.501%, Livestock 0.0191%"
+           style="max-width:600px;width:100%;height:auto;display:block;margin:20px auto;border-radius:8px;">
+      <figcaption style="font-size:14px;color:#555;margin-top:8px;">
+        <strong>Figure 5.</strong> Species distribution of all shelter intakes
+      </figcaption>
+    </figure>
+
+    <p style="margin-top: 30px;">
+      Turning to the health conditions upon arrival (visualized in the bar chart below with a log scale), 
       the data overwhelmingly shows that the majority of animals enter the shelter in 'Normal' health, 
       with this category significantly outnumbering all others. Following 'Normal,' 'Injured' and 'Sick' animals 
       constitute the next most substantial groups, indicating a consistent need for veterinary assessment and treatment resources. 
@@ -98,75 +127,80 @@
       of incoming animals, from routine care for generally healthy individuals to immediate and intensive medical support 
       for those arriving injured or ill.
     </p>
-    <img src="assets/intake distribution.png" alt="Bar chart showing distribution of animal health conditions at intake on a log scale, with 'Normal' being the most frequent." style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+
+    <figure style="text-align:center; margin-top:30px;">
+      <img src="assets/intake distribution.png"
+           alt="Bar chart showing distribution of animal health conditions at intake on a log scale, with 'Normal' being the most frequent."
+           style="max-width:800px;width:100%;height:auto;display:block;margin:20px auto;border-radius:8px;">
+      <figcaption style="font-size:14px;color:#555;margin-top:8px;">
+        <strong>Figure 6.</strong> Health-condition frequencies at intake (log scale)
+      </figcaption>
+    </figure>
 
     <hr /> 
-    <!-- This would be placed after the previous <hr /> tag in your HTML structure -->
 
     <h2>How Intake Condition Shapes Animal Outcomes</h2>
     
     <p>
       The initial state of an animal upon arrival at the Austin Animal Center plays a pivotal role in determining its subsequent journey. 
-      The interactive chart below visualizes the distribution of outcomes (like Adoption, Transfer, Euthanasia, etc.)for each distinct intake condition.
+      The interactive chart below visualizes the distribution of outcomes (like Adoption, Transfer, Euthanasia, etc.) for each distinct intake condition.
     </p>
     <p>
       Observe how animals entering in 'Normal' health predominantly find positive outcomes, primarily through 'Adoption'. 
       Conversely, as intake conditions become more challenging—such as 'Injured', 'Sick', 'Feral', or 'Neonatal'—the spectrum of outcomes shifts. 
       While 'Adoption' and 'Transfer' to rescue partners remain crucial life-saving avenues, the rates of 'Euthanasia' or 'Died' unfortunately increase 
       for these more vulnerable populations. Conditions like 'Parvo' or 'Agonal' starkly illustrate the severe prognoses some animals face. 
- 
     </p>
     
-    <iframe 
-        src="assets/outcome_by_intake_condition.html" 
-        width="100%" 
-        height="650" 
-        frameborder="0"
-        style="border: none; border-radius: 12px; margin-top: 20px; margin-bottom: 20px;"
-        loading="lazy"
-        title="Interactive chart showing Outcome Type by Intake Condition">
-    </iframe>
+    <figure>
+      <iframe src="assets/outcome_by_intake_condition.html" width="100%" height="650" frameborder="0"
+              style="border: none; border-radius: 12px; margin-top: 20px; margin-bottom: 20px;" loading="lazy"></iframe>
+      <figcaption style="font-size:14px;color:#555;margin-top:8px;">
+        <strong>Figure 7.</strong> Outcome distribution by intake condition
+      </figcaption>
+    </figure>
 
     <hr /> 
     
-    <h2>Shelter Coverage & Intakes</h2>
+    <h2>Shelter Coverage &amp; Intakes</h2>
     <p>
-      This map overlays 5‑km service circles for every animal shelter (blue rings with house icons)
-      on top of neighborhood‑level intake counts (yellow → blue shading) and clustered records of 
-      animals that have already been taken in (yellow → blue = more cases). <br>
+      This map overlays 5-km service circles for every animal shelter (blue rings with house icons)
+      on top of neighborhood-level intake counts (yellow → blue shading) and clustered records of 
+      animals that have already been taken in (yellow → blue = more cases). <br>
       It quickly shows where intake pressure is greatest, how well shelter coverage lines up with that demand, 
       and which fringe areas still lie outside any shelter radius.
     </p>
-    <iframe
-      src="assets/shelter_and_animal_intakes.html"
-      width="100%"
-      height="600"
-      frameborder="0"
-      style="border: none; border-radius: 12px;"
-      loading="lazy">
-    </iframe>
+    <figure>
+      <iframe src="assets/shelter_and_animal_intakes.html" width="100%" height="600" frameborder="0"
+              style="border: none; border-radius: 12px;" loading="lazy"></iframe>
+      <figcaption style="font-size:14px;color:#555;margin-top:8px;">
+        <strong>Figure 8.</strong> (Duplicate view) Shelter service areas and intake density
+      </figcaption>
+    </figure>
 
     <hr />
     
     <h2>Intake → Outcome Flow</h2>
     <p>
-      This Sankey uses warm tones (peach / pastel yellow) for intake sources and cool pastel blue/gray for final outcomes.<br>
-      - “Stray” and “Owner Surrender” are the two dominant entry points.<br>
-      - Well over half of those animals reach Adoption or Transfer, showing a strong rescue‑to‑placement pipeline.<br>
-      - Euthanasia, No Outcome, Lost and similar results form only thin streams, reflecting Austin’s progress toward its no‑kill goal.<br>
-      In short, wide warm streams narrow into cool outcome nodes—highlighting the main rescue‑to‑placement path and the few small branches that still need attention.
+      This Sankey uses warm tones (peach / pastel yellow) for intake sources and cool pastel blue/gray for final outcomes.<br>
+      — “Stray” and “Owner Surrender” are the two dominant entry points.<br>
+      — Well over half of those animals reach Adoption or Transfer, showing a strong rescue-to-placement pipeline.<br>
+      — Euthanasia, No Outcome, Lost and similar results form only thin streams, reflecting Austin’s progress toward its no-kill goal.<br>
+      In short, wide warm streams narrow into cool outcome nodes—highlighting the main rescue-to-placement path and the few small branches that still need attention.
     </p>
-    <iframe
-      src="assets/animal_outcomes_flow_sankey.html"
-      width="860"
-      height="620"
-      frameborder="0"
-      style="border: none; border-radius: 12px;"
-      loading="lazy">
-    </iframe>
+    <figure>
+      <iframe src="assets/animal_outcomes_flow_sankey.html" width="860" height="620" frameborder="0"
+              style="border: none; border-radius: 12px;" loading="lazy"></iframe>
+      <figcaption style="font-size:14px;color:#555;margin-top:8px;">
+        <strong>Figure 9.</strong> Sankey diagram of intake sources to final outcomes
+      </figcaption>
+    </figure>
 
-  
-  
+    <p style="margin-top:32px; font-style:italic;">
+      In light of the continuing influx of stray animals in Austin, we hope this analysis can—however modestly—help more dogs and cats move from the streets into safe, caring homes.
+      By making the patterns behind the data clear, we believe every extra ounce of awareness translates into another life saved.
+    </p>
+
   </div>
 </body>
 </html>
